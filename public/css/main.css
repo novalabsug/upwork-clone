@@ -1,0 +1,522 @@
+@font-face {
+  font-family: lato;
+  src: url("fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: lato-bold;
+  src: url("fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: lato-bolder;
+  src: url("fonts/Lato-Black.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+  color: #fff;
+  font-family: lato;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: #095979;
+  border: none;
+  border: 2px solid #095979;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+
+.di-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.di-flx.sp-btn {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.di-flx.sp-evn {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.di-flx.sp-and {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.di-grd {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.di-grd.grd-clm-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.di-grd.grd-clm-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.di-grd.grd-clm-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.di-grd.grd-clm-5 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.di-grd.grd-clm-6 {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.di-grd.grd-clm-7 {
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.di-grd.grd-clm-8 {
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
+.di-grd.grd-clm-9 {
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+/* ----- Navbar code styles --------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+  padding: 3rem 3rem 2rem 3rem;
+  height: 20%;
+}
+
+nav.navbar-dark {
+  background: #444343;
+  padding: 2rem 5rem;
+}
+
+nav.navbar-dark .nav-icons {
+  padding: 0;
+}
+
+nav .logo h3 {
+  font-size: 1.3rem;
+  font-family: lato-bold;
+  color: #fff;
+}
+
+nav .nav-links {
+  padding: 0.8rem 2rem;
+  border-radius: 5rem;
+}
+
+nav .nav-links ul li {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+nav .nav-links ul li a {
+  text-transform: capitalize;
+}
+
+nav .nav-icons {
+  padding: 1rem 3rem 0.5rem 2rem;
+}
+
+/* ----- main body code styles --------------------------------------------------------------------------------------------------------------------------------*/
+main#home header {
+  height: 600px;
+  background: #444343;
+}
+
+main#home header .hdr-wrapper {
+  height: 80%;
+  position: relative;
+}
+
+main#home header .hdr-wrapper .hdr-msg {
+  padding: 8rem 0 2rem 3rem;
+  width: 50%;
+  height: inherit;
+}
+
+main#home header .hdr-wrapper .hdr-msg h3 {
+  font-family: lato-bold;
+  font-size: 3rem;
+}
+
+main#home header .hdr-wrapper .hdr-msg a {
+  position: relative;
+  top: 1rem;
+}
+
+main#home header .hdr-wrapper .hdr-msg hr {
+  position: absolute;
+  left: 4rem;
+  bottom: 4.5rem;
+  border: 1px solid #095979;
+  width: 200px;
+}
+
+main#home header .hdr-wrapper .hdr-msg .social-icons-container {
+  padding: 2rem 0;
+  position: absolute;
+  left: 3rem;
+  bottom: 1rem;
+}
+
+main#home header .hdr-wrapper .hdr-msg .social-icons-container a {
+  margin: 0 0.5rem;
+}
+
+main#home header .hdr-wrapper .hdr-msg .social-icons-container a i {
+  font-size: 1.5rem;
+}
+
+main#home header .hdr-wrapper .hdr-img {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  right: 3rem;
+  bottom: -5rem;
+}
+
+main#home header .hdr-wrapper .hdr-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main#home .main-content section.sec-1 {
+  padding: 5rem 3rem 1rem 5rem;
+  width: 50%;
+}
+
+main#home .main-content section.sec-1 h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+main#home .main-content section.sec-2 {
+  padding: 1rem 5rem 2rem 5rem;
+}
+
+main#home .main-content section.sec-2 a {
+  margin: 1rem 0;
+}
+
+main#home .main-content section.sec-2 a i {
+  color: #000;
+  font-size: 4rem;
+}
+
+main#home .main-content section.sec-2 a i:hover {
+  color: #095979;
+}
+
+main#home .main-content section.sec-3 {
+  padding: 3rem 5rem 5rem 5rem;
+}
+
+main#home .main-content section.sec-3 .card {
+  background: #e7e7e7;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  height: 320px;
+}
+
+main#home .main-content section.sec-3 .card:hover .card-img i {
+  color: #095979;
+}
+
+main#home .main-content section.sec-3 .card:hover .card-txt {
+  background: #095979;
+}
+
+main#home .main-content section.sec-3 .card .card-img {
+  height: 60%;
+}
+
+main#home .main-content section.sec-3 .card .card-img i {
+  font-size: 9rem;
+  color: #000;
+  position: relative;
+  top: 2rem;
+  left: 6rem;
+}
+
+main#home .main-content section.sec-3 .card .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+main#home .main-content section.sec-3 .card .card-txt {
+  height: 40%;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  background: #444343;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+}
+
+main#home .main-content section.sec-3 .card .card-txt .txt-hdr {
+  height: 30%;
+}
+
+main#home .main-content section.sec-3 .card .card-txt .txt-hdr h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+main#home .main-content section.sec-3 .card .card-txt .txt-hdr p {
+  color: #fff;
+  font-weight: 600;
+}
+
+main#home .main-content section.sec-3 .card .card-txt .txt-hdr p span {
+  font-style: italic;
+  margin: 0 0.2rem;
+  font-weight: lighter;
+  color: #acaaaa;
+}
+
+main#home .main-content section.sec-4 {
+  padding: 5rem 3rem;
+  background: #444343;
+}
+
+main#home .main-content section.sec-4 .sec-txt {
+  padding: 3rem 0;
+}
+
+main#home .main-content section.sec-4 .sec-txt h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: lato-bold;
+}
+
+main#home .main-content section.sec-4 .sec-txt p {
+  margin: 0.5rem 0;
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+main#home .main-content section.sec-4 .sec-txt a.explore-btn {
+  position: relative;
+  top: 2rem;
+}
+
+main#account header {
+  padding: 5rem 5rem 3rem 5rem;
+}
+
+main#account header a i {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+
+main#account .form-container {
+  padding: 2rem 5rem 5rem 8rem;
+}
+
+main#account .form-container #form {
+  background: #095979;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+main#account .form-container #form .form-btns-container {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: #444343;
+}
+
+main#account .form-container #form .form-btns-container a {
+  width: 100%;
+  padding: 1.5rem 0;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+main#account .form-container #form .form-btns-container a.active {
+  background: #095979;
+}
+
+main#account .form-container #form .form-btns-container a:nth-child(1) {
+  border-top-left-radius: 1rem;
+}
+
+main#account .form-container #form .form-btns-container a:nth-child(2) {
+  border-top-right-radius: 1rem;
+}
+
+main#account .form-container #form .forms-wrapper {
+  position: relative;
+}
+
+main#account .form-container #form .forms-wrapper form {
+  padding: 2rem 3rem;
+  display: none;
+}
+
+main#account .form-container #form .forms-wrapper form.show {
+  display: block;
+}
+
+main#account .form-container #form .forms-wrapper form h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+main#account .form-container #form .forms-wrapper form .input {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+main#account .form-container #form .forms-wrapper form .input:hover i.lni-eye {
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+main#account .form-container #form .forms-wrapper form .input label {
+  font-size: 1.2rem;
+}
+
+main#account .form-container #form .forms-wrapper form .input i {
+  position: absolute;
+  top: 3.5rem;
+  left: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #095979;
+}
+
+main#account .form-container #form .forms-wrapper form .input i.lni-eye {
+  left: auto;
+  cursor: pointer;
+  right: 3rem;
+  visibility: hidden;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+main#account .form-container #form .forms-wrapper form .input input {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem 0.5rem 2.2rem;
+  color: #000;
+  width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+main#account .form-container #form .forms-wrapper form button {
+  background: #444343;
+}
+
+footer .footer-contacts-container {
+  padding: 3rem 2rem 1rem 2rem;
+}
+
+footer .footer-contacts-container h3 {
+  text-align: center;
+  color: #000;
+  font-size: 2rem;
+  font-family: lato-bold;
+  text-transform: uppercase;
+}
+
+footer .footer-contacts-container .di-flx {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0;
+}
+
+footer .footer-contacts-container .di-flx span {
+  padding: 1rem;
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-contacts-container .di-flx span i {
+  margin: 0 0.3rem;
+  color: #095979;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+footer .footer-contacts-container .di-flx span p {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+footer .footer-copyright-container {
+  padding: 3rem 2rem;
+}
+
+footer .footer-copyright-container p {
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+footer .footer-copyright-container p span.year {
+  color: #000;
+}
+
+footer .footer-copyright-container p span.nova {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+footer .footer-copyright-container p span.nova a {
+  color: #095979;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=main.css.map */

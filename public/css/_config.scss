@@ -1,0 +1,90 @@
+$primary-color: #095979;
+$secondary-color: #444343;
+$third-color: #fff;
+@mixin easeOut {
+    transition: all 0.3s ease-out;
+}
+
+@font-face {
+    font-family: lato;
+    src: url('fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url('fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: lato-bolder;
+    src: url('fonts/Lato-Black.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: $third-color;
+    font-family: lato;
+    @include easeOut();
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: $primary-color;
+    border: none;
+    border: 2px solid $primary-color;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.di-flx {
+    display: flex;
+    &.sp-btn {
+        justify-content: space-between;
+    }
+    &.sp-evn {
+        justify-content: space-evenly;
+    }
+    &.sp-and {
+        justify-content: space-around;
+    }
+}
+
+.di-grd {
+    display: grid;
+    grid-gap: 1rem;
+    &.grd-clm-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &.grd-clm-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &.grd-clm-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &.grd-clm-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &.grd-clm-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &.grd-clm-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    &.grd-clm-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    &.grd-clm-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+}

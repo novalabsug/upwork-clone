@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="your-project-dir/font-css/LineIcons.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <title>Upwork-Clone</title>
+    <!-- open graph -->
+    <!-- Informations -->
+    <meta property="og:description" content="OPEN_GRAPH_DESCRIPTION" />
+    <meta property="og:title" content="OPEN_GRAPH_TITLE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="WEBSITE_URL" />
+    <!-- Image -->
+    <meta property="og:image" content="URL_TO_IMAGE" />
+    <meta property="og:image:alt" content="Website icon" />
+    <meta property="og:image:height" content="80" />
+    <meta property="og:image:secure_url" content="URL_TO_IMAGE" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="80" />
+    <meta property="og:locale" content="en_GB" />
+</head>
+
+<body>
+    <nav id="nav-bar" class="di-flx sp-btn navbar-dark">
+        <div class="logo">
+            <h3>Upwork-Clone</h3>
+        </div>
+        <!-- <div class="nav-links">
+            <ul class="di-flx">
+                <li class="nav-link"><a href="">home</a></li>
+                <li class="nav-link"><a href="">explore</a></li>
+                <li class="nav-link"><a href="">developer</a></li>
+                <li class="nav-link"><a href="">about</a></li>
+            </ul>
+        </div> -->
+        <div class="nav-icons">
+            <a href="" class="btn account-btn"><i class="lni lni-enter"></i>sign in</a>
+        </div>
+    </nav>
+    <main id="account">
+        <header>
+            <a href="index.html"><i class="lni lni-home"></i></a>
+        </header>
+        <div class="form-container di-flx">
+            <div id="form">
+                <div class="form-btns-container di-flx">
+                    <a class="signin-form-btn active">sign in</a>
+                    <a class="signup-form-btn">sign up</a>
+                </div>
+                <div class="forms-wrapper">
+                    <form action="" class="signin-form show">
+                        <h4>account login</h4>
+                        <div class="input">
+                            <label for="email">Email </label>
+                            <i class="lni lni-envelope"></i>
+                            <input type="email" name="email" id="email" class="email" placeholder="eg. example@email.com">
+                            <div class="error email-error"></div>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password </label>
+                            <i class="lni lni-lock" id="lock-icon"></i>
+                            <i class="lni lni-eye"></i>
+                            <input type="password" name="password" id="password" class="password">
+                            <div class="error password-error"></div>
+                        </div>
+                        <button type="submit" class="btn submit-btn">login</button>
+                    </form>
+                    <form action="" class="signup-form">
+                        <h4>create account</h4>
+                        <div class="form-group di-grd grd-clm-2">
+                            <div class="input">
+                                <label for="firstname">Firstname </label>
+                                <i class="lni lni-user"></i>
+                                <input type="text" name="firstname" id="firstname" class="firstname" placeholder="eg. John">
+                                <div class="error firstname-error"></div>
+                            </div>
+                            <div class="input">
+                                <label for="lastname">Lastname </label>
+                                <i class="lni lni-user"></i>
+                                <input type="text" name="lastname" id="lastname" class="lastname" placeholder="eg. Doe">
+                                <div class="error lastname-error"></div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email </label>
+                            <i class="lni lni-envelope"></i>
+                            <input type="email" name="email" id="email" class="email" placeholder="eg. example@email.com">
+                            <div class="error email-error"></div>
+                        </div>
+                        <div class="input">
+                            <label for="password">Password </label>
+                            <i class="lni lni-lock" id="lock-icon"></i>
+                            <i class="lni lni-eye"></i>
+                            <input type="password" name="password" id="password" class="password">
+                            <div class="error password-error"></div>
+                        </div>
+                        <button type="submit" class="btn submit-btn">sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-main">
+        <div class="footer-copyright-container">
+            <p>Copyright &copy; <span class="year">2021</span>. All rights reserved</p>
+            <p><span class="nova">A <a href="">nova</a> company</span></p>
+        </div>
+    </footer>
+</body>
+<script src="js/account.js"></script>
+
+</html>
